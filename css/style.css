@@ -6,6 +6,11 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
 }
+:root{
+    --color-principal: magenta;
+    --color-secundario: #fff;
+    --color-input: #f6f7fb;
+}
 header{
     display: flex;
     flex-flow: row wrap;
@@ -18,7 +23,7 @@ header{
 /* nav */
 .nav-header{
     position: fixed;
-    background-color: white;
+    background-color: var(--color-secundario);
     width: 100vw;
     display: flex;
     justify-content: flex-end;
@@ -34,9 +39,9 @@ header{
    /* margin: 10px; */
 }
 .nav-link:hover{
-    color: magenta;
+    color: var(--color-principal);
 }
-.nav-link, .nav-link-2{
+.nav-link, .nav-link-2, .nav-link-footer{
     text-decoration: none;
     color: #666;
     font-size: 15px;
@@ -49,10 +54,10 @@ header{
 }
 .nav-link-2,
 .button-form{
-    background-color: magenta;
+    background-color: var(--color-principal);
     border-radius: 20px;
     padding: 10px 20px;
-    color: white;
+    color: var(--color-secundario);
     font-weight: 400;
 }
 
@@ -83,7 +88,7 @@ header{
 h1{
     font-weight: 900;
     font-size: 60px;
-    color: magenta;
+    color: var(--color-principal);
 }
 .about-saludo{
     font-weight: 700;
@@ -101,17 +106,17 @@ h1{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #f6f7fb;
+    background-color: var(--color-input);
     padding: 50px 0;
 }
 .skills-descripcion{
-    width: 50%;
+    width: 70%;
     justify-content: center;
     align-self: center;
 }
 h2{
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 .skills-text, .project-text{
     margin: 10px 0;
@@ -121,12 +126,12 @@ h2{
     flex-wrap: wrap;
     align-self: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
 }
 .skills-card{
     width: 27%;
     margin: 20px;
-    background-color:#f6f7fb;
+    background-color:var(--color-input);
     border: solid 1px #dddfe5;
     border-radius: 15px;
     padding: 20px 5px;
@@ -138,11 +143,12 @@ h2{
 .skills-card figcaption{
     margin-top: 10px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* quote */
 .quote-container{
-    background-color: rgb(255, 0, 255);
+    background-color: var(--color-principal);
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -150,18 +156,29 @@ h2{
     
 }
 .quote-container p, i, h3{
-    color: white;
+    color: var(--color-secundario);
     text-align: center;
     padding: 18px;
 }
 .quote-container i{
     font-size: 100px;
 }
-.quote-container p{
+.quote-container blockquote p{
     font-size: 20px;
     font-weight: 300;
-    width: 50%;
+    width: 100%;
     align-self: center;
+}
+blockquote{
+    width: 50% ;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--color-secundario);
+    font-size: 20px;
+    font-weight: 300;
+    align-self: center;
+    text-align: center;
 }
 
 .quote-container h3{
@@ -216,7 +233,7 @@ h2{
 /* seccion contacto */
 
 .contenedor-contacto{
-    background-color: #f6f7fb;
+    background-color: var(--color-input);
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -224,7 +241,7 @@ h2{
 }
 .contacto{
     width: 90vw;
-    background-color: white;
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
     margin: 150px 0px;
@@ -268,14 +285,14 @@ h2{
     font-weight: 300;
 }
 .contacto-ul i{
-    color: magenta;
+    color: var(--color-principal);
     font-size: 1.2rem;
     padding: 10px;
     margin-right: 10px;
 }
 .contacto-ul i:hover{
-    background-color: magenta;
-    color: white;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
     border-radius: 50%;
     
 }
@@ -304,7 +321,7 @@ h2{
 input,
 textarea{
     border-radius: 30px ;
-    background-color: #f6f7fb;
+    background-color: var(--color-input);
     padding: 15px;
     border: none;
 }
@@ -319,8 +336,9 @@ textarea{
     width: 40%;
     font-weight: 600;
 }
+/* inicio de footer */
 footer{
-    background-color: magenta;
+    background-color: var(--color-principal);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,14 +347,18 @@ footer{
 }
 .nav-menu-footer{
     display: flex;
-
     height: 75px;
     padding: 30px;
     margin-right: 40px;
 }
 .nav-menu-footer a,
 .footer-text{
-    color: white;
+    color: var(--color-secundario);
+}
+
+.nav-link-footer:hover{
+    color: var(--color-input);
+
 }
 .nav-menu-footer-redes{
     display: flex;
@@ -346,17 +368,22 @@ footer{
    
 }
 .nav-menu-footer-redes a i{
-   background-color: white;
+   background-color: var(--color-secundario);
    border-radius: 50%;
-   color: magenta;
+   color: var(--color-principal);
    padding: 10px;
    font-size: 1.5rem;
    margin: 0 5px;
 }
-.nav-menu-footer-redes a {
-    text-decoration: none;
-    color: white;
-}
+.nav-menu-footer-redes a i:hover{
+    background-color: var(--color-principal);
+    border-radius: 50%;
+    color: var(--color-secundario);
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 0 5px;
+ }
+
 .footer-text{
     margin-bottom: 20px;
 }
@@ -386,11 +413,10 @@ footer{
     }
 
     .skills-container{
-        flex-direction: column;
-        width: 100%;
+        width: 65%;
     }
     .skills-card{
-        width: 70%;
+        width: 40%;
         justify-content: center;
         align-self: center;
     }
