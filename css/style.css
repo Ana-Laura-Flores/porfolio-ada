@@ -27,6 +27,7 @@ header{
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 .nav-menu{
     display: flex;
@@ -46,10 +47,12 @@ header{
     color: #666;
     font-size: 15px;
     font-weight: 300;
+    
 }
 .nav-link-2:hover,
 .button-form:hover{
-    filter: opacity(60%);
+    filter: opacity(50%);
+    transition: all 2s;
     
 }
 .nav-link-2,
@@ -83,7 +86,21 @@ header{
 }
 .img-about{
     width: 300px;
-    align-items: center;
+    animation: move 5s;
+}
+
+@keyframes move{
+    0%{
+        opacity: 100%;
+    }
+    
+    50%{
+        transform: translateY(40px);
+    }
+    
+    100%{
+        opacity: 100%;
+    }
 }
 h1{
     font-weight: 900;
@@ -200,27 +217,23 @@ blockquote{
     justify-content: space-between;
 }
 
-
 .project-item{
     display: flex;
     flex-wrap: wrap;
     width: 30%;
     margin: 0.5rem;
-    
-    
+    border: 1px solid #dddfe5 ;
+    border-radius: 7px;
+    transition: all 3s;
     
 }
-/* .project-item{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 85%;
-} */
+
 .project-item figure{
     width: 100%;
     padding: 25px 15px;
-    border: 1px solid #dddfe5 ;
     border-radius: 7px;
+    background-color: var(--color-secundario);
+    
     
 }
 .project-item a figure img{
@@ -228,6 +241,21 @@ blockquote{
 }
 .project-item a{
     width: 100%;
+    text-decoration: none;
+}
+.project-item figcaption{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+.project-item:hover{
+    border-color: var(--color-principal);
+    transform: scale(1.2);
+    
+}
+
+.project-item:hover figcaption{
+    color: var(--color-principal);
 }
 
 /* seccion contacto */
@@ -244,7 +272,7 @@ blockquote{
     background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
-    margin: 150px 0px;
+    margin: 70px 0px;
     padding: 50px;
     border-radius: 20px;
     border: #666 solid 0.1px;
@@ -255,7 +283,7 @@ blockquote{
     padding-right: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .contacto-right{
     width: 60%;
@@ -284,11 +312,16 @@ blockquote{
     font-size: 1rem;
     font-weight: 300;
 }
+.contacto-ul li a:hover{
+    color: var(--color-principal);
+}
 .contacto-ul i{
     color: var(--color-principal);
+    background-color: var(--color-secundario);
     font-size: 1.2rem;
     padding: 10px;
     margin-right: 10px;
+   
 }
 .contacto-ul i:hover{
     background-color: var(--color-principal);
@@ -347,9 +380,10 @@ footer{
 }
 .nav-menu-footer{
     display: flex;
-    height: 75px;
-    padding: 30px;
-    margin-right: 40px;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
 }
 .nav-menu-footer a,
 .footer-text{
@@ -357,7 +391,7 @@ footer{
 }
 
 .nav-link-footer:hover{
-    color: var(--color-input);
+    color:gray;
 
 }
 .nav-menu-footer-redes{
@@ -374,14 +408,17 @@ footer{
    padding: 10px;
    font-size: 1.5rem;
    margin: 0 5px;
+  
 }
 .nav-menu-footer-redes a i:hover{
     background-color: var(--color-principal);
     border-radius: 50%;
+    border: var(--color-secundario) solid 1px;
     color: var(--color-secundario);
     padding: 10px;
     font-size: 1.5rem;
     margin: 0 5px;
+    
  }
 
 .footer-text{
@@ -411,13 +448,50 @@ footer{
     .about-datos p{
         margin-bottom: 20px;
     }
+    .project-item figcaption{
+        font-size: 0.8rem;
+    }
+}
 
+@media (max-width:920px){
     .skills-container{
-        width: 65%;
+        width: 77%;
     }
     .skills-card{
         width: 40%;
         justify-content: center;
         align-self: center;
+    }
+    
+}
+@media (max-width:800px){
+    .contacto{
+       flex-direction: column;
+       align-items: center;
+    }
+    .contacto-left{
+        width: 80%;
+        padding: 0;
+    }
+    .contacto-ul{
+        margin-left: 0;
+    }
+    .title-p{
+        margin: 0;
+    }
+    .contacto-right{
+        width: 80%;
+        margin-top: 20px;
+        padding: 0;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:640px){
+    .project-item{
+        width: 43%;
     }
 }
