@@ -19,6 +19,6 @@ ya casi pasaron 20 años y obviamente los cambios que fueron surgiendo en la tec
 
 ***
 
-![nena de pelo negro](./imagenes/logo-krear.png)
+![nena de pelo negro](./imagenes/logo_krear.png)
 
 *el icono que me representa hace varios años*
