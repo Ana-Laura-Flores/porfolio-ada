@@ -11,6 +11,10 @@
     --color-secundario: #fff;
     --color-input: #f6f7fb;
 }
+
+h4{
+    display:none;
+}
 header{
     display: flex;
     flex-flow: row wrap;
@@ -24,7 +28,7 @@ header{
 .nav-header{
     position: fixed;
     background-color: var(--color-secundario);
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     z-index: 1;
@@ -84,7 +88,7 @@ header{
     justify-content: center;
     width: 50%;
 }
-.img-about{
+.about-img img{
     width: 300px;
     animation: move 5s;
 }
@@ -135,7 +139,7 @@ h2{
     font-weight: 700;
     font-size: 2.5rem;
 }
-.skills-text, .project-text{
+.skills-text, .projects-text{
     margin: 10px 0;
 }
 .skills-container{
@@ -152,6 +156,13 @@ h2{
     border: solid 1px #dddfe5;
     border-radius: 15px;
     padding: 20px 5px;
+    transition: all 3s;
+
+}
+.skills-card:hover{
+    perspective: 8000px;
+    transform: rotateY(360deg);
+    box-shadow: 0px 0px 20px 0px gray;
     
 }
 .skills-card img{
@@ -217,7 +228,7 @@ blockquote{
     justify-content: space-between;
 }
 
-.project-item{
+.projects-item{
     display: flex;
     flex-wrap: wrap;
     width: 30%;
@@ -225,10 +236,11 @@ blockquote{
     border: 1px solid #dddfe5 ;
     border-radius: 7px;
     transition: all 3s;
+    background-color: var(--color-secundario);
     
 }
 
-.project-item figure{
+.projects-item figure{
     width: 100%;
     padding: 25px 15px;
     border-radius: 7px;
@@ -236,25 +248,25 @@ blockquote{
     
     
 }
-.project-item a figure img{
+.projects-item a figure img{
     width: 100%;
 }
-.project-item a{
+.projects-item a{
     width: 100%;
     text-decoration: none;
 }
-.project-item figcaption{
+.projects-item figcaption{
     text-align: center;
     color: black;
     font-size: 1rem;
 }
-.project-item:hover{
+.projects-item:hover{
     border-color: var(--color-principal);
     transform: scale(1.2);
     
 }
 
-.project-item:hover figcaption{
+.projects-item:hover figcaption{
     color: var(--color-principal);
 }
 
@@ -264,15 +276,15 @@ blockquote{
     background-color: var(--color-input);
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 .contacto{
-    width: 90vw;
+    width: 90%;
     background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
-    margin: 70px 0px;
+    margin: 50px 0px;
     padding: 50px;
     border-radius: 20px;
     border: #666 solid 0.1px;
@@ -376,7 +388,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 .nav-menu-footer{
     display: flex;
@@ -448,7 +460,7 @@ footer{
     .about-datos p{
         margin-bottom: 20px;
     }
-    .project-item figcaption{
+    .projects-item figcaption{
         font-size: 0.8rem;
     }
 }
@@ -491,7 +503,7 @@ footer{
 }
 
 @media (max-width:640px){
-    .project-item{
+    .projects-item{
         width: 43%;
     }
 }
