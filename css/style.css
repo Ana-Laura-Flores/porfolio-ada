@@ -177,7 +177,7 @@ h2{
 /* quote */
 .quote-container{
     background-color: var(--color-principal);
-    height: 450px;
+    /* height: 450px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -432,9 +432,28 @@ footer{
     margin: 0 5px;
     
  }
+ .footer-copry{
+     display: flex;
+     align-self: center;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+ }
 
 .footer-text{
-    margin-bottom: 20px;
+    margin: 10px 10px 13px 10px; 
+ 
+}
+.latido{
+    font-size: 1.5rem;
+    animation: latidos .5s infinite;
+	transform-origin:center;
+    
+}
+@keyframes latidos {
+    0% { font-size: 1.5rem; }
+    50% { font-size: 2rem; }
+    100% { font-size: 1.5rem; }
 }
 
 /* media query */
@@ -457,8 +476,8 @@ footer{
         text-align: center;
         margin: 0;
     }
-    .about-datos p{
-        margin-bottom: 20px;
+    .about-text{
+        margin-bottom: 35px;
     }
     .projects-item figcaption{
         font-size: 0.8rem;
@@ -500,10 +519,26 @@ footer{
         font-weight: 700;
         font-size: 2rem;
     }
+    h1{
+        text-align: center;
+    }
 }
 
 @media (max-width:640px){
     .projects-item{
         width: 43%;
+    }
+    .skills-card{
+        width: 50%;
+    }
+    .nav-menu-footer{
+        width: 90%;
+    }
+    .nav-item{
+        padding: 0 10px;
+    }
+    .nav-link-footer{
+        font-size: 0.8rem;
+       
     }
 }
