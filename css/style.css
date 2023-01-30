@@ -63,7 +63,7 @@ header{
 .button-form{
     background-color: var(--color-principal);
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: var(--color-secundario);
     font-weight: 400;
 }
@@ -542,3 +542,37 @@ footer{
        
     }
 }
+    @media (max-width:400px){
+    .nav-link-2{
+            font-size: 12px;
+    }
+    #about{
+        padding: 50px 20px;
+    }
+    .about-datos{
+        width: 70%;
+    }
+}
+
+    @media (max-width:320px){
+        .projects-item{
+            width: 75%;
+        }
+        .contacto{
+            padding: 30px;
+
+        }
+        h2{
+          font-size: 1.5rem;  
+        }
+        .nav-link-footer{
+            font-size: 0.5rem;
+        }
+        .nav-menu-footer-redes li{
+            padding: 10px;
+        }
+        .nav-menu-footer-redes a i{
+            font-size: 1rem;
+        }
+    }
+
