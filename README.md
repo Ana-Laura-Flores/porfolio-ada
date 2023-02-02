@@ -18,6 +18,12 @@ ya casi pasaron 20 años y obviamente los cambios que fueron surgiendo en la tec
 ### Espero disfrutes de este mi proyecto y mi inicio en la carrera de programadora. 
 
 ***
+## Los links para que veas mi portfolio
+
+[link al deploy de git](https://ana-laura-flores.github.io/porfolio-ada/index.html)
+[link a mi proyecto en netlify](https://monumental-salamander-d280b2.netlify.app/index.html)
+
+***
 
 ![nena de pelo negro](./imagenes/logo_krear.png)
 
