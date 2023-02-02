@@ -44,10 +44,10 @@ header{
    padding: 0 20px;
    /* margin: 10px; */
 }
-.nav-link:hover{
+/* .nav-link:hover{
     color: var(--color-principal);
     font-weight: 500;
-}
+} */
 .nav-link, .nav-link-2, .nav-link-footer{
     text-decoration: none;
     color: #666;
@@ -55,14 +55,7 @@ header{
     font-weight: 300;
     
 }
-.nav-link-2:hover,
-.button-form:hover{
-    /* filter: opacity(80%); */
-    transition: all 2s;
-    border-radius: 0;
-    cursor: pointer;
-    
-}
+
 .nav-link-2,
 .button-form{
     background-color: var(--color-principal);
@@ -163,17 +156,7 @@ h2{
     transition: all 3s;
 
 }
-.skills-card:hover{
-    box-shadow: 0px 0px 20px 0px gray;
-}
-.skills-card:hover img{
-    perspective: 8000px;
-    transform: rotateY(360deg);
-    filter: drop-shadow(3px 3px 5px gray); 
 
-    
-    
-}
 .skills-card img{
     width: 50%;
     transition: all 3s;
@@ -271,15 +254,7 @@ blockquote{
     color: black;
     font-size: 1rem;
 }
-.projects-item:hover{
-    border-color: var(--color-principal);
-    transform: scale(1.2);
-    
-}
 
-.projects-item:hover figcaption{
-    color: var(--color-principal);
-}
 
 /* seccion contacto */
 
@@ -299,7 +274,6 @@ blockquote{
     padding: 50px;
     border-radius: 20px;
     border: #666 solid 0.1px;
-
 }
 .contacto-left{
     width: 60%;
@@ -313,7 +287,6 @@ blockquote{
     padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .contacto h2{
     margin-bottom: 7px;
@@ -322,12 +295,10 @@ blockquote{
     font-weight: 300;
     font-size: 1rem;
     margin: 30px 0;
-
 }
 .contacto-ul{
     margin-top: 20px;
     margin-left: 30px;
-    
 }
 .contacto-ul li{
     padding: 5px 0;
@@ -338,10 +309,6 @@ blockquote{
     margin-top: 20px;
     font-size: 1rem;
     font-weight: 300;
-    
-}
-.contacto-ul li a:hover{
-    color: var(--color-principal);
 }
 .contacto-ul i{
     color: var(--color-principal);
@@ -350,14 +317,8 @@ blockquote{
     padding: 8px;
     margin-right: 10px;
     transition: all 2s;
-   
 }
-.contacto-ul a:hover i{
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
-    border-radius: 50%;
-    
-}
+/* formulario */
 .formulario{
     width: 100%;
 }
@@ -371,7 +332,6 @@ blockquote{
     flex-direction: column;
     width: 48%;
 }
-
 .form-item-colum{
     display: flex;
     flex-direction: column;
@@ -391,7 +351,6 @@ textarea{
     height: 125px;
     margin-bottom: 8px;
 }
-
 .button-form{
     border: none;
     margin-top: 10px;
@@ -418,11 +377,6 @@ footer{
 .footer-text{
     color: var(--color-secundario);
 }
-
-.nav-link-footer:hover{
-    color:gray;
-
-}
 .nav-menu-footer-redes{
     display: flex;
 }
@@ -438,18 +392,7 @@ footer{
    font-size: 1.5rem;
    margin: 0 5px;
    transition: all 1.5s;
-  
 }
-.nav-menu-footer-redes a i:hover{
-    background-color: var(--color-principal);
-    border-radius: 50%;
-    border: var(--color-secundario) solid 1px;
-    color: var(--color-secundario);
-    padding: 10px;
-    font-size: 1.5rem;
-    margin: 0 5px;
-    
- }
  .footer-copry{
      display: flex;
      align-self: center;
@@ -602,6 +545,59 @@ footer{
     .form-item{
         width: 100%;
     }
+    .latido, .about-img img{
+        animation: none;
+    }
+    
+}
+@media (min-width: 640px){
+    .nav-link:hover{
+        color: var(--color-principal);
+        font-weight: 500;
+    }
+    .nav-link-2:hover,
+    .button-form:hover{
+        /* filter: opacity(80%); */
+        transition: all 2s;
+        border-radius: 0;
+        cursor: pointer;
+    }    
+    .skills-card:hover{
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+    .skills-card:hover img{
+        perspective: 8000px;
+        transform: rotateY(360deg);
+        filter: drop-shadow(3px 3px 5px gray); 
+    }
+    .projects-item:hover{
+        border-color: var(--color-principal);
+        transform: scale(1.2);
+    }
+    .projects-item:hover figcaption{
+        color: var(--color-principal);
+    }
+    .contacto-ul li a:hover{
+        color: var(--color-principal);
+    }
+    .contacto-ul a:hover i{
+        background-color: var(--color-principal);
+        color: var(--color-secundario);
+        border-radius: 50%;
+    }
+    .nav-link-footer:hover{
+        color:gray;
+    }
+    .nav-menu-footer-redes a i:hover{
+        background-color: var(--color-principal);
+        border-radius: 50%;
+        border: var(--color-secundario) solid 1px;
+        color: var(--color-secundario);
+        padding: 10px;
+        font-size: 1.5rem;
+        margin: 0 5px;
+    }
+    
 }
     @media (max-width:400px){
     .nav-link-2{
@@ -631,13 +627,11 @@ footer{
 }
 
     @media (max-width:350px){
-        
-        .contacto{
-            padding: 30px;
-
-        }
         h2{
           font-size: 1.5rem;  
+        }
+        .contacto{
+            padding: 30px;
         }
         .nav-link-footer{
             font-size: 0.5rem;
