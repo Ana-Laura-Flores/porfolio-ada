@@ -20,7 +20,7 @@ ya casi pasaron 20 años y obviamente los cambios que fueron surgiendo en la tec
 ***
 ## Los links para que veas mi portfolio
 
-[link al deploy de git](https://ana-laura-flores.github.io/porfolio-ada/index.html)
+[link al deploy de git](https://ana-laura-flores.github.io/porfolio-ana-laura)
 
 [link a mi proyecto en netlify](https://monumental-salamander-d280b2.netlify.app/index.html)
 
