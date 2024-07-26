@@ -26,7 +26,11 @@
                 <li class="nav-item"><a href="#about" class="nav-link">HOLA</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">PROYECTOS</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
-                <li class="nav-item"><a href="#contenedor-contacto" class="nav-link-2">CONTACTO</a></li>
+               
+                <li class="switch">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </li>
             </ul>
         </nav>
     <!-- Fin de Manú de Navegación -->
@@ -41,7 +45,10 @@
                 <p class="about-saludo"> ¡Hola! Soy</p>
                 <h1>Ana Laura</h1>
                 <p class="about-text">Diseñadora Gráfica UBA - Desarrolladora Frontend</p>
-                <a href="#projects" class="nav-link-2">LO QUE HAGO</a>
+                <div class="container-links">
+                    <a href="#projects" class="nav-link-2">LO QUE HAGO</a>
+                    <a href="#contenedor-contacto" class="nav-link-2">CONTACTO</a>
+                </div>
             </article>
             <figure class="about-img">
                 <img src="./imagenes/krear-logo.svg" alt="nena vestido rosa y pelo negro">
@@ -51,16 +58,88 @@
     <!-- inicio de seccion proyectos -->
     <section id="projects" class="projects">
         <h2>Mis Proyectos</h2>
-        <p class="projects-text" >Estos son los proyectos que fui desarrollando a lo largo de mi carrera</p>
+        <p class="projects-text" >Estos son algunos proyectos que fui desarrollando</p>
         <section class="projects-container">
             <h4>titulo no visible</h4>
+            
             <article class="projects-item">
                 <h4>titulo no visible</h4>
-                <a href="https://ana-laura-flores.github.io/proyecto-web/" target="blank">
+                <a href="https://ana-laura-flores.github.io/magic-jobs/" target="blank">
                 <figure class="projects-figure">
-                    <img src="./imagenes/proyecto1.jpg" alt="proyecto festejo intro a frontend">
+                    <img class="projects-img" src="./imagenes/portada-magicJobs.jpg" alt="proyecto magic jobs">
                     <figcaption>
-                        <p>Proyecto web</p>
+                        <h5>Buscador de empleos Mágicos</h5>
+                        <p>Es un portal de empleos donde se pueden visualizar, agregar, eliminar y editar empleos.</p>
+                       
+                        <!-- <div class="repo">
+                            <p>ver el repositorio</p>
+                        </div> -->
+                    </figcaption>
+                </figure>
+                </a>
+                <div class="projects-skills-container">
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logoHTML" >
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo CSS" >
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="logoJavascript" >
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="logoTailwind">
+                </div>
+            </article>
+            <article class="projects-item">
+                <h4>titulo no visible</h4>
+                <a href="https://todo-list-theta-dun.vercel.app/">
+                <figure class="projects-figure">
+                    <img class="projects-img" src="./imagenes/portada.jpg" alt="todo list">
+                    <figcaption>
+                        <h5>Todo App</h5>
+                        <p>Es una aplicación de control de notas o tareas, se pueden agregar, borrar, marcar como realizadas. Todo se guarda en localStorage</p>
+                    </figcaption>
+                </figure>
+                </a>
+                <div class="projects-skills-container">
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logoHTML" >
+                            <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo CSS" >
+                            <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react">
+                            <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="logoTailwind">
+                            
+                </div>
+            </article>
+            <article class="projects-item">
+                <h4>titulo no visible</h4>
+                <a href="https://ana-laura-flores.github.io/ahorradas-proyect-javascript/" target="blank">
+                <figure class="projects-figure">
+                    <img class="projects-img" src="./imagenes/portada-proyecto.jpg" alt="proyecto ahorradas controlador de gastos">
+                    <figcaption>
+                        <h5>Ahorradas</h5>
+                        <p>Es una aplicación de control de gastos y ganancias. Los datos se almacenan en el localStorage.</p>
+                    </figcaption>
+                </figure>
+                </a>
+                <div class="projects-skills-container">
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logoHTML" >
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo CSS" >
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="logoJavascript" >
+                    <img class="projects-skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="logoTailwind">
+                </div>
+            </article>
+            
+            <article class="projects-item">
+                <h4>titulo no visible</h4>
+                <a href="https://movies-project-eight.vercel.app/">
+                <figure>
+                    <img class="projects-img" src="./imagenes/carrousel.jpg" alt="movies app">
+                    <figcaption>
+                        <p>Buscador de Películas</p>
+                    </figcaption>
+                </figure>
+                </a>
+            </article>
+            <article class="projects-item">
+                <h4>titulo no visible</h4>
+                <a href="https://ana-laura-flores.github.io/gestor-de-memes/" target="blank">
+                <figure class="projects-figure">
+                    <img class="projects-img" src="./imagenes/portada_gestor_de_meme.jpg" alt="pantalla de inicio de generador de memes">
+                    <figcaption>
+                        <p>Generador de Memes</p>
                     </figcaption>
                 </figure>
                 </a>
@@ -69,7 +148,7 @@
                 <h4>titulo no visible</h4>
                 <a href="https://ana-laura-flores.github.io/mobile-first/" target="blank">
                 <figure class="projects-figure">
-                    <img src="./imagenes/proyecto2.jpg" alt="proyecto mercado liebre">
+                    <img class="projects-img" src="./imagenes/proyecto2.jpg" alt="proyecto mercado liebre">
                     <figcaption>
                         <p>Mercado Liebre</p>
                     </figcaption>
@@ -80,64 +159,21 @@
                 <h4>titulo no visible</h4>
                 <a href="./index.html">
                 <figure class="projects-figure">
-                    <img src="./imagenes/proyecto3.jpg" alt="proyecto portfolio">
+                    <img class="projects-img" src="./imagenes/proyecto3.jpg" alt="proyecto portfolio">
                     <figcaption>
                         <p>Portfolio</p>
                     </figcaption>
                 </figure>
                 </a>
             </article>
+           
             <article class="projects-item">
                 <h4>titulo no visible</h4>
-                <a href="https://ana-laura-flores.github.io/gestor-de-memes/" target="blank">
+                <a href="https://ana-laura-flores.github.io/proyecto-web/" target="blank">
                 <figure class="projects-figure">
-                    <img src="./imagenes/portada_gestor_de_meme.jpg" alt="pantalla de inicio de generador de memes">
+                    <img class="projects-img" src="./imagenes/proyecto1.jpg" alt="proyecto festejo intro a frontend">
                     <figcaption>
-                        <p>Generador de Memes</p>
-                    </figcaption>
-                </figure>
-                </a>
-            </article>
-            <article class="projects-item">
-                <h4>titulo no visible</h4>
-                <a href="https://ana-laura-flores.github.io/ahorradas-proyect-javascript/" target="blank">
-                <figure class="projects-figure">
-                    <img src="./imagenes/portada-proyecto.jpg" alt="proyecto ahorradas controlador de gastos">
-                    <figcaption>
-                        <p>Ahorradas</p>
-                    </figcaption>
-                </figure>
-                </a>
-            </article>
-            <article class="projects-item">
-                <h4>titulo no visible</h4>
-                <a href="https://ana-laura-flores.github.io/magic-jobs/" target="blank">
-                <figure class="projects-figure">
-                    <img src="./imagenes/portada-magicJobs.jpg" alt="proyecto magic jobs">
-                    <figcaption>
-                        <p>Buscador de empleos Mágicos</p>
-                    </figcaption>
-                </figure>
-                </a>
-            </article>
-            <article class="projects-item">
-                <h4>titulo no visible</h4>
-                <a href="https://todo-list-theta-dun.vercel.app/">
-                <figure class="projects-figure">
-                    <img src="./imagenes/portada.jpg" alt="todo list">
-                    <figcaption>
-                        <p>Todo App</p>
-                    </figcaption>
-                </figure>
-                </a>
-            </article>
-            <article class="projects-item">
-                <h4>titulo no visible</h4>
-                <a href="https://movies-project-eight.vercel.app/">
-                <figure>
-                    <img src="./imagenes/carrousel.jpg" alt="movies app">
-                    <figcaption>
-                        Buscador de Películas
+                        <p>Proyecto web</p>
                     </figcaption>
                 </figure>
                 </a>
@@ -146,7 +182,7 @@
                 <h4>titulo no visible</h4>
                 <a href="https://ana-laura-flores.github.io/proyecto-spotify/">
                 <figure class="projects-figure">
-                    <img src="./imagenes/spotify_tailwind.jpg" alt="proyecto 2">
+                    <img class="projects-img" src="./imagenes/spotify_tailwind.jpg" alt="proyecto 2">
                     <figcaption>
                         <p>Spotify clone - tailwind Css</p>
                     </figcaption>
@@ -305,5 +341,6 @@
             <p class="footer-text">Hecho con </p><p class="latido">❤️</p><p class="footer-text"> por ana</p>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
