@@ -199,14 +199,16 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items:center;
     text-align: center;
     background-color: var(--color-input);
     padding: 70px 0;
 }
 .skills-descripcion{
     width: 70%;
-    justify-content: center;
-    align-self: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }
 h2{
     font-weight: 700;
@@ -220,7 +222,9 @@ label {
     font-size: 0.8rem;
 }
 .skills-text, .projects-text{
+    width:70%;
     margin: 10px 0;
+    text-align: center;
 }
 .skills-container{
     display: flex;

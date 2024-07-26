@@ -6,7 +6,7 @@ ya casi pasaron 20 años y obviamente los cambios que fueron surgiendo en la tec
 ***
 ## Un poco de lo que vas a encontrar 😆
 
-1- Lenguajes de programación que trabajo hasta hoy (html5, css3, javascript) // y también veras los que voy a seguir aprendiendo, hasta tener conocimiento de todos los lenguajes nombrados.
+1- Lenguajes de programación y frameworks que trabajo hasta hoy (html5, css3, javascript, react, tailwind) // 
 
 2- Trabajos realizados (proyectos de iniciación en el desarrollo web) Obviamente encontraremos proyectos de iniciación y proyectos más avanzados y complejos que ire completando a lo largo del avance de mi carrera
 
